@@ -47,6 +47,12 @@ class App extends React.Component {
         })
     };
 
+    onAdd =(event) => {
+        const inputArea = document.querySelector('input');
+        inputArea.style.display='block';
+        console.log(event.target)
+    };
+
     render() {
         return (
             <div className='container'>
@@ -55,7 +61,7 @@ class App extends React.Component {
                     <button onClick={this.onDelete}>Remove task</button>
                     <button onClick={this.onDeleteAll}>Clear</button>
                     <form className="form" onSubmit={this.onSubmit}>
-                        <button>Add new task</button>
+                        <button onClick={this.onAdd}>Add new task</button>
                         <input value={this.state.task} onChange={this.onChange} placeholder='Type what you need to do' />
                     </form>
                 </div>

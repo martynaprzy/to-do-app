@@ -1,24 +1,53 @@
 body {
     font-family: 'Indie Flower', cursive;
-    background-color: #B6D9E1;
+    background-color: #E4F1F6;
 }
 h2 {
     text-align: center;
 }
 div.container {
     background-color: #e1eff3;
-    height: 100vh;
+    height: 100%;
+    opacity: 0.9;
     box-shadow: 1px 1px 10px;
+    margin: 0.2em;
+    padding: 0.4em;
+    padding-bottom: 2em;
+    z-index: 1;
+}
+div.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background-image: url("https://jeshoots.com/wp-content/uploads/2017/12/IMG_6165-1024x683.jpg");
+    background-size: cover;
 }
 div.tasks {
     display: flex;
     flex-direction: column;
     margin: 0 2em;
 }
+div.tasks::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background-color: #e1eff3;
+
+}
 div.tasks button, form.form button {
     padding: 1em;
     margin: 0.2em auto;
-    width: 80%;
+    width: 60%;
     border: 1px solid #162741;
     border-radius: 4px;
 }
@@ -34,10 +63,18 @@ form input, button {
     border-radius: 4px;
     color: #213D63;
     font-size: 1.2em;
-    background-color: #A7CEE2;
+    background-color: #c8e3e9;
     box-shadow: 1px 1px 6px #162741;
     font-family: 'Indie Flower', cursive;
     font-weight: bold;
 
-
+}
+form input {
+    display: none;
+    width: 60%;
+}
+form input:hover, button:hover {
+    background-color: #B6D9E1;
+    transition: 0.4s;
+    cursor: pointer;
 }
