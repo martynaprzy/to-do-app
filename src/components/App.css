@@ -1,0 +1,43 @@
+body {
+    font-family: 'Indie Flower', cursive;
+    background-color: #B6D9E1;
+}
+h2 {
+    text-align: center;
+}
+div.container {
+    background-color: #e1eff3;
+    height: 100vh;
+    box-shadow: 1px 1px 10px;
+}
+div.tasks {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2em;
+}
+div.tasks button, form.form button {
+    padding: 1em;
+    margin: 0.2em auto;
+    width: 80%;
+    border: 1px solid #162741;
+    border-radius: 4px;
+}
+form {
+    display: inline;
+}
+form input, button {
+    margin: 1em auto;
+    display: block;
+    padding: 1em 2em;
+    width: 80%;
+    border: 2px solid #162741;
+    border-radius: 4px;
+    color: #213D63;
+    font-size: 1.2em;
+    background-color: #A7CEE2;
+    box-shadow: 1px 1px 6px #162741;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+
+
+}

@@ -3,8 +3,17 @@ ul {
     padding: 0;
 }
 li.task {
-    border: 1px solid darkgray;
+    color: #162741;
+    background-color: whitesmoke;
     list-style-type: none;
-    padding: 10px;
-    margin: 10px;
+    padding: 1em;
+    margin: 0.2em;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 1px 1px 6px #213D63;
+}
+li.task h4 {
+    background-color: whitesmoke;
+    padding: 0.4em;
+
 }
