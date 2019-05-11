@@ -16,6 +16,8 @@ class App extends React.Component {
     onChange = (event) => {
         if (event.target.value !== '') {
             this.setState({task: event.target.value });
+        } else {
+            this.setState({task:''});
         }
     };
 
@@ -57,7 +59,11 @@ class App extends React.Component {
         return (
             <div className='container'>
                 <div className='tasks'>
-                    <h2>to do list</h2>
+                    <div className='header'>
+                        <i className="fas fa-check logo"></i>
+                        <h3>To do list</h3>
+
+                    </div>
                     <button onClick={this.onDelete}>Remove task</button>
                     <button onClick={this.onDeleteAll}>Clear</button>
                     <form className="form" onSubmit={this.onSubmit}>
